@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photography Worldwide Contest</title>
+</head>
+<body>
+    <style>
+        body {
+            Margin: 0!important;
+	        padding: 15px;
+	        background-color: white;        
+            }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background: url('background.jpg')
+        }
+        .wrapper-inner {
+            width: 100%;
+            max-width: 670px;
+            Margin: 0 auto;
+
+        }
+        table {
+            border-spacing: 0;
+            font-family: sans-serif;
+            color: #727f80;
+            background: url('papyrus.png')
+        }
+        .outer-table {
+            width: 100%;
+            max-width: 670px;
+            margin: 0 auto;
+        }
+        td {
+            padding: 0;
+        }
+        .header {
+            background-color: rgb(43, 54, 65);
+            border-bottom: 3px solid #81B9C3;
+        }
+        p {
+            Margin:0;
+        }
+        .header p {
+            text-align: center;
+            padding: 1%;
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-size: 10px;
+            padding-left: 25px
+        }
+        /*--- End Outer Table 1 --*/
+        .main-table-first {
+            width: 100%;
+            max-width: 610px;
+            Margin: 0 auto;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
+        #banner {
+            background-color: transparent;
+            }
+        /*--- Start Two Column Sections --*/
+        .two-column {
+            text-align: center;
+            font-size: 0;
+            padding: 5px 0 10px 0;
+        }
+        .two-column .section {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .two-column .content {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+        }
+        .content {
+            width: 100%;
+            padding-top: 20px;
+        }
+        .center {
+            display: table;
+            Margin: 0 auto;
+        }
+        img {
+            border: 0;
+        }
+        img.logo {
+            float: left;
+            Margin-left: 5%;
+            max-width: 140px!important;
+            width: 90px;
+            height: 120px;
+        }
+        #callout {
+            float: right;
+            Margin: 4% 5% 2% 0;
+            height: auto;
+            overflow: hidden;
+        }
+        #callout img {
+            max-width: 20px;
+        }
+        .social {
+            list-style-type: none;
+            Margin-top: 1%;
+            padding-top: 90px;
+            color: white;
+            margin-left: 25px
+            
+        }
+        li .social  {
+            list-style-type: none;
+
+            display: inline-block;
+        }
+        li .social-img  {
+            list-style-type: none;
+
+            display: inline-block;
+        }
+        .social li img {
+            
+            max-width: 25px;
+            Margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        /*--- Start Outer Table Banner Image, Text & Button --*/
+        .image img {
+            width: 100%;
+            max-width: 670px;
+            height: auto;
+        }
+        .main-table {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            background-color: #FFF;
+            border-radius: 6px;
+
+        }
+        .one-column .inner-td {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+
+
+            
+        }
+        .inner-td {
+            padding: 10px;
+            
+        }
+        .h2 {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 45px;
+            Margin: 12px;
+            color: #4A4A4A;
+        }
+        p.center h6.center{
+            text-align: center;
+            max-width: 580px;
+            line-height: 24px;
+        }
+        .button-holder-center {
+            text-align: center;
+            Margin: 5% 2% 3% 0;
+        }
+        .button-holder {
+            float: right;
+            Margin: 5% 0 3% 0;
+        }
+        .btn {
+            font-size: 15px;
+            font-weight: 600;
+            background: rgb(255, 66, 82);
+            color: #FFF;
+            text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 28px;
+        }
+        /*--- Start Two Column Image & Text Sections --*/
+        .two-column img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+        }
+        .two-column .text {
+            padding: 10px 0;
+        }
+        /*--- Start 3 Column Image & Text Section --*/
+        .outer-table-2 {
+            width: 100%;
+            max-width: 670px;
+            margin: 22px auto;
+            background-color: #C2C1C1;
+            border-bottom: 3px solid #81B9C3;
+            border-top: 3px solid #81B9C3;
+        }
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding: 10px 0 30px 0;
+        }
+        .three-column .section {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .three-column .content {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .three-column img {
+            width: 100%;
+            max-width: 125px;
+            height: auto;
+        }
+        .outer-table-2 p {
+            margin-top: 6px;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23px;
+        }
+        /*--- Start Two Column Article Section --*/
+        .outer-table-3 {
+            width: 100%;
+            max-width: 670px;
+            margin: 22px auto;
+            background-color: #C2C1C1;
+            border-top: 3px solid #81B9C3;
+        }
+        .h3 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: 600;
+            Margin-bottom: 8px;
+            color: #4A4A4A;
+        }
+        /*--- Start Bottom One Column Section --*/
+        .inner-bottom {
+            padding: 22px;
+        }
+        .h1 {
+            text-align: center!important;
+            font-size: 25px!important;
+            font-weight: 600;
+            line-height: 45px;
+            Margin: 12px 0 20px 0;
+            color: #4A4A4A;
+        }
+        .inner-bottom p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+        /*--- Start Footer Section --*/
+        .footer {
+            width: 100%;
+            background-color: white;
+            Margin: 0 auto;
+            color: #FFF;
+        }
+        .footer img {
+            max-width: 135px;
+            Margin: 0 auto;
+            padding: 4% 0 1% 0;
+
+        }
+        p.footer {
+            text-align: center;
+            color: white!important;
+            line-height: 30px;
+            padding-bottom: 4%;
+            text-transform: uppercase;
+        }
+        /*--- Media Queries --*/
+        @media screen and (max-width: 400px) {
+            .h1 {
+                font-size: 22px;
+            }
+            .two-column .column, .three-column .column {
+                max-width: 100%!important;
+            }
+            .two-column img {
+                width: 100%!important;
+            }
+            .three-column img {
+                max-width: 60%!important;
+            }
+        }
+        @media screen and (min-width: 401px) and (max-width: 400px) {
+
+            .two-column .column {
+                max-width: 50%!important;
+            }
+            .three-column .column {
+                max-width: 33%!important;
+        }
+        }
+        @media screen and (max-width:768px) {
+        img.logo {
+            float:none !important;
+            margin-left:0% !important;
+            max-width: 160px!important;
+        }
+
+        #callout {
+            float:none !important;
+            margin: 0% 0% 0% 0;
+            height: auto;
+            text-align:center;
+            overflow: hidden;
+        }
+        #callout img {
+            max-width:26px !important; 
+        }
+        .two-column .section {
+            width: 100% !important;
+            max-width: 100% !important;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .two-column img {
+            width: 100% !important;
+            height: auto !important;
+        }
+        img.img-responsive {
+            width:100% !important;
+            height:auto !important;
+            max-width:100% !important;
+        }
+        .content {
+            width: 100%;
+            padding-top:0px !important;
+        }
+    }
+        
+    </style>
+            <table class="main-table">
+             
+                <tr>
+                    <td class="two-column">
+                            <div class="section">
+                                    <table width="100%">
+                                        <tr>
+                                            <td class="inner-td">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="logo.png" style="width: 100px; height: 110px; padding-left: 40px">
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        <div class="section">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td class="social">
+                                                    <a href="#">PHOTOS</a>
+                                                    <a href="#">BLOG</a>
+                                                    <a href="#">UPGRADE TO PRO</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!--- End First Column of Two Columns -->
+    
+                    </td>
+                </tr> <!--- End Two Column Section -->
+
+                <tr>
+                    <td class="one-column">
+                        <div class="section">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td class="text center image">
+                                                    <img src="bg.png">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="one-column">
+                        <div class="section">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td class="text center">
+                                                    <h2>BRIEF | Top 40 Photos</h2>
+                                                </td>
+                                                <td class="text center">
+                                                    <h6>Seeking artists with strong social followings to submit Top 40 style music. Predominantly looking for Pop, Hip-Hop, and Indie Rock. Must be catchy and high quality. Please include any information about the artist in the notes section of your submission.</h6>
+                                                </td>       
+                                                <td class="text center">
+                                                    <h6><strong>Placement Value:</strong> Negotiable</h6>
+                                                </td>
+                                                <td class="text center">
+                                                    <h6><strong>Moods:</strong> Fun, Fresh, Catchy</h6>
+                                                </td>
+                                                <td class="text center">
+                                                    <h6><strong>What we don't want:</strong> Explicit content</h6>
+                                                </td>
+                                                <td class="text center">
+                                                    <h6><strong>Non-PRO Users Receive:</strong> 60.00%</h6>
+                                                </td>
+                                                <td class="text center">
+                                                    <h6><strong>PRO Users Receive:</strong> 80.00%</h6>
+                                                </td>
+                                                <td class="text center">
+
+                                                    <div class="button-holder">
+                                                        <a class="btn" href="#">Go to Listing</a>
+                                                        <br><br>
+                                                    </div>
+                                                </td>  
+                                                              
+                                                <td class="text center">
+
+                                                    <a href="#" style="margin-left: -27px; padding-bottom: 80px">Get 3000 credits with Pro!</a>
+                                                    <br><br>
+                                                </td>
+                                                <br><br>
+                                            </tr>
+                                            <br><br>
+                                            <tr class="footer">
+                                                <td class="social center" style="margin-left: 203px; padding: 20px 0 20px 0">
+                                                 <li>                      
+                                                    <a href="#">
+                                                        <img src="iconmonstr-behance-4-240.png">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="iconmonstr-facebook-4-240.png">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="iconmonstr-instagram-14-240.png">
+                                                    </a>
+                                                </li>                                                                                               
+                                            </td>
+                                            
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                    
+                </tr>
+            </table> <!--- End Main Table -->
+</body>
+</html>
